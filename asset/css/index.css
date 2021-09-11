@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap");
+
+:root {
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 18px;
+}
+
+header {
+    display: grid;
+    color: white;
+    font-size: medium;
+    padding: 35px 39px;
+    z-index: 100;
+    position: relative;
+    align-items: baseline;
+    grid-template-columns: 35vw auto 35vw;
+    background: linear-gradient(180deg, #1d252e 0%, rgba(29, 37, 46, 0) 100%);
+}
+
+header ul {
+    gap: 2rem;
+    width: 1/3;
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+}
+
+.search-container {
+    width: 100%;
+    padding: 0.5rem 1.2rem;
+    border-radius: 30px;
+    display: flex;
+    gap: 0.7rem;
+    background: #0e1217;
+}
+
+#search {
+    width: 100%;
+    border: none;
+    background: none;
+    font-size: small;
+    color: white;
+}
+
+#search:focus {
+    border: none;
+    outline: none;
+}
+
+.carousel-item {
+    color: white;
+}
+
+h1 {
+    font-size: xx-large;
+    font-weight: 600;
+}
+
+p {
+    font-size: medium;
+}
+
+.item-wrapper::-webkit-scrollbar {
+    width: 0;
+    scroll-behavior: smooth;
+}
+
+.pagination-item {
+    border-radius: 5px;
+    margin: 1.5rem 0 3rem;
+    padding: 0.25rem 0.5rem;
+    color: darkslategray;
+    background: white;
+    font-size: small;
+}
+
+.pagination-item.active {
+    color: white;
+    background: darkorange;
+}
+
+.scrollbar::-webkit-scrollbar {
+    width: 8px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+    background-color: #262d35;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background-color: #0b101b;
+}
+
+#carousel {
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    mask-image: radial-gradient(70.57% 268.74% at 78.04% 52.21%, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+    -webkit-mask-image: radial-gradient(70.69% 50.88% at 70.04% 50.21%, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+@media screen and (max-width: 1024px) {
+    :root {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    :root {
+        font-size: 10px;
+    }
+}
+
+#search::placeholder {
+    font-size: 0.7rem;
+}
