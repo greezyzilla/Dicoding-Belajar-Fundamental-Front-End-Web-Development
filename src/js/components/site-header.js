@@ -7,7 +7,7 @@ class SiteHeader extends HTMLElement {
     render() {
         this.setAttribute("class", "flex justify-between text-white text-sm px-12 py-8 z-50 relative items-center w-screen box-border");
         this.innerHTML = `
-            <a href="./" class="w-56 font-semibold text-lg">My<span class="text-yellow-600">Movie</span>List</a>
+            <a href="./index.html" class="w-56 font-semibold text-lg">My<span class="text-yellow-600">Movie</span>List</a>
             <div class="w-1/2 md:w-1/3 px-4 py-2 rounded-xl md:rounded-3xl gap-4 bg-gray-900 flex items-center text-gray-300">
                 <svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
                     <circle cx="11" cy="11" r="8"></circle>
