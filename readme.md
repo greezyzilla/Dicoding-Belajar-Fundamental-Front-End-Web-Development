@@ -1,5 +1,6 @@
 # Overview
 
+![Image Display](https://i.ibb.co/kcn1Vyk/about-banner.png)
 This project is made to fulfill the last submission of **Dicoding’s Front-End Web Development Fundamental course**. Inspired by **MyAnimeList.net**, user can add their watched movies into their own watched list. The watched list is saved in the browser’s local storage. The movies data is taken from **TheMovieDB** public API.
 
 ## Usage
