@@ -19,7 +19,7 @@ class WatchedItem extends HTMLElement {
     render() {
         const date = new Date(this._movie.release_date);
         this.innerHTML = `
-            <div class="w-16 h-24 bg-gray-300 rounded-md bg-cover" style="background-image: url(${this._movie.poster_path ? `https://image.tmdb.org/t/p/w200/${this._movie.poster_path}` : "https://upload.wikimedia.org/wikipedia/commons/f/fc/No_picture_available.png"});" alt="asd"></div>
+            <div class="w-16 h-24 bg-gray-300 rounded-md bg-cover" style="background-image: url(${this._movie.poster_path ? `https://image.tmdb.org/t/p/w200/${this._movie.poster_path}` : "https://upload.wikimedia.org/wikipedia/commons/f/fc/No_picture_available.png"});"></div>
             <div class="col-span-6 place-self-start flex flex-col ml-4">
                 <div>
                     <h3 class="font-semibold text-base mb-1">${this._movie.title}</h3>
