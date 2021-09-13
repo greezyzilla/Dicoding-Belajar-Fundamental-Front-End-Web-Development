@@ -19,7 +19,7 @@ class DetailsInformation extends HTMLElement {
             <img class="h-full" style="object-fit:cover;width: 100vw; position: absolute;z-index:-1; top: 0; left: 0; mask-image: radial-gradient(51.35% 33.53% at 50.62% 33.53%, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 100%); -webkit-mask-image: radial-gradient(51.35% 33.53% at 50.62% 33.53%, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 100%);" src="https://image.tmdb.org/t/p/original${this._movie.backdrop_path}" alt=""/>
             <h1 class="text-4xl shadow-text-orange font-semibold text-white white text-center mt-24 mb-16">${this._movie.tagline.toUpperCase() || this._movie.title.toUpperCase()}</h1>
             <div class="flex flex-col md:flex-row gap-12 items-center mb-8 md:h-96">
-                <div style="background-size:cover; box-shadow: inset 0px 0px 100px 100px rgba(0, 0, 0, 0.3); background-image:url(https://image.tmdb.org/t/p/w500${this._movie.poster_path})" class="w-64 h-96 bg-cover rounded-xl"></div>
+                <div style="background-size:cover; background-position:center; box-shadow: inset 0px 0px 100px 100px rgba(0, 0, 0, 0.3); background-image:url(https://image.tmdb.org/t/p/w500${this._movie.poster_path})" class="w-64 h-96 bg-cover rounded-xl"></div>
                 <div class="md:w-2/3">
                     <h2 class="text-3xl text-white">${this._movie.title}
                         <span class="inline-flex items-baseline gap-1 text-sm text-yellow-500 py-1 px-3 bg-gray-900 rounded-xl">
