@@ -1,8 +1,11 @@
-import "./components/site-header.js";
-import "./components/display-card.js";
-import "./components/browse-pagination.js";
-import "./components/site-footer.js";
-import watchedList from "./data/movies.js";
+import "../components/site-header.js";
+import "../components/display-card.js";
+import "../components/browse-pagination.js";
+import "../components/site-footer.js";
+import watchedList from "../data/movies.js";
+import axios from "axios";
+import "../../css/tailwind.css";
+import "regenerator-runtime";
 
 const getMoviesNode = async (category, query, page) => {
     let url = `https://api.themoviedb.org/3/search/movie?api_key=fba11e40d77b925133e081c7a4c7c3d0&language=en-US&query=${query}&page=${page}`;

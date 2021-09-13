@@ -17,7 +17,7 @@ class DisplayList extends HTMLElement {
         this._movies.map((movie) => {
             const movieCard = document.createElement("display-card");
             movieCard.movie = movie;
-            this.setAttribute("class", "flex justify-start gap-6 overflow-x-scroll item-wrapper py-6 px-2");
+            this.setAttribute("class", "flex justify-start gap-6 overflow-x-scroll scrollbar-hidden py-6 px-2");
             this.appendChild(movieCard);
         });
     }

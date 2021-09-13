@@ -1,9 +1,13 @@
-import "./components/site-header.js";
-import "./components/carousel-list.js";
-import "./components/display-list.js";
-import "./components/site-footer.js";
-import settings from "./data/settings.js";
-import watchedList from "./data/movies.js";
+import "../components/site-header.js";
+import "../components/carousel-list.js";
+import "../components/display-list.js";
+import "../components/site-footer.js";
+import settings from "../data/settings.js";
+import watchedList from "../data/movies.js";
+import axios from "axios";
+import swal from "sweetalert";
+import "../../css/tailwind.css";
+import "regenerator-runtime";
 
 const getMoviesSectionsNodes = async (displays) => {
     const moviesSectionsNodes = [];
@@ -50,7 +54,7 @@ window.addEventListener("load", async () => {
     document.getElementById("header").appendChild(headerNode);
 
     const mainNode = document.getElementById("main");
-    mainNode.setAttribute("class", mainNode.classList.toString() + " mb-28");
+    mainNode.setAttribute("class", mainNode.classList.toString() + " mb-28 md:mb-0");
     mainNode.appendChild(await getMoviesCarouselNode());
     const moviesNode = await getMoviesSectionsNodes(settings.movie.display);
     moviesNode.forEach((movieNode) => mainNode.appendChild(movieNode));

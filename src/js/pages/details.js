@@ -1,18 +1,22 @@
-import "./components/site-header.js";
-import "./components/details-information.js";
-import "./components/details-person-list.js";
-import "./components/site-footer.js";
-import settings from "./data/settings.js";
-import watchedList from "./data/movies.js";
+import "../components/site-header.js";
+import "../components/details-information.js";
+import "../components/details-person-list.js";
+import "../components/site-footer.js";
+import settings from "../data/settings.js";
+import watchedList from "../data/movies.js";
+import axios from "axios";
+import swal from "sweetalert";
+import "../../css/tailwind.css";
+import "regenerator-runtime";
 
 const getErrorNode = () => {
     const errorNode = document.createElement("section");
     errorNode.setAttribute("class", "flex flex-col items-center");
     errorNode.setAttribute("id", "error");
     errorNode.innerHTML = `
-        <h1 class="text-white text-4xl mb-4 mt-40">ERROR 404</h1>
-        <p class="text-gray-300 text-base mb-6 text-center">Halaman yang anda cari tidak dapat ditemukan</p>
-        <a href="./" class="py-2 px-4 border border-yellow-600 bg-yellow-600 text-md rounded-sm text-white transform hover:scale-110 transition ease-in-out cursor-pointer">Kembali ke home</a>
+        <h1 class="text-white text-4xl shadow-text-indigo font-semibold mb-4 mt-40">ERROR 404</h1>
+        <p class="text-gray-300 text-base mb-6 text-center">The page you are looking for could not be found!</p>
+        <a href="./" class="py-2 px-4 border border-yellow-600 bg-yellow-600 text-md rounded-sm text-white transform hover:scale-110 transition ease-in-out cursor-pointer">Back to Home</a>
     `;
     return errorNode;
 };
@@ -65,7 +69,7 @@ window.addEventListener("load", async () => {
                     <line x1="19" y1="12" x2="5" y2="12"></line>
                     <polyline points="12 19 5 12 12 5"></polyline>
                 </svg>
-                <span href="" class="text-gray-300 text-sm">Back Home</span>
+                <span href="" class="text-gray-300 text-sm">Back to Home</span>
             </a>
         `;
 

@@ -8,7 +8,7 @@ class SiteHeader extends HTMLElement {
         this.setAttribute("class", "flex justify-between text-white text-sm px-12 py-8 z-50 relative items-center w-screen box-border");
         this.innerHTML = `
             <a href="./" class="w-56 font-semibold text-lg">My<span class="text-yellow-600">Movie</span>List</a>
-            <div class="w-1/2 md:w-1/3 px-4 py-1 md:py-2 rounded-3xl gap-4 bg-gray-900 flex items-center text-gray-300">
+            <div class="w-1/2 md:w-1/3 px-4 py-2 rounded-xl md:rounded-3xl gap-4 bg-gray-900 flex items-center text-gray-300">
                 <svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
                     <circle cx="11" cy="11" r="8"></circle>
                     <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
@@ -18,7 +18,7 @@ class SiteHeader extends HTMLElement {
                 </form>
             </div>
             <nav class="fixed bottom-0 left-0 z-50 md:relative shad border-t-2 border-gray-800 md:border-0">
-                <ul class="w-56 gap-12 md:gap-4 p-4 md:p-0 flex list-none justify-center md:justify-between w-screen md:w-full bg-gray-900 md:bg-transparent">
+                <ul class="gap-12 md:gap-4 p-4 md:p-0 flex list-none justify-center md:justify-between w-screen md:w-full bg-gray-900 md:bg-transparent">
                     <li class="${this._setting.active == "home" && "text-yellow-600"} hover:opacity-80">
                         <a href='./index.html' class="flex flex-col items-center gap-1">
                             <svg class="block md:hidden" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>

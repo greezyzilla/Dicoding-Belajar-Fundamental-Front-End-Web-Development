@@ -1,7 +1,8 @@
-import "./components/site-header.js";
-import "./components/about-card-list.js";
-import "./components/site-footer.js";
-import settings from "./data/settings.js";
+import "../components/site-header.js";
+import "../components/about-card-list.js";
+import "../components/site-footer.js";
+import settings from "../data/settings.js";
+import "../../css/tailwind.css";
 
 const getStackNode = (stack) => {
     const stackNode = document.createElement("section");
@@ -49,7 +50,7 @@ window.addEventListener("load", () => {
     document.getElementById("header").appendChild(headerNode);
 
     const mainNode = document.getElementById("main");
-    mainNode.innerHTML = `<h1 class="text-center text-3xl my-8">ABOUT THIS PROJECT</h1>`;
+    mainNode.innerHTML = `<h1 class="text-center text-3xl shadow-text-orange my-8 font-semibold">ABOUT THIS PROJECT</h1>`;
     mainNode.appendChild(getDisplayNode(settings.about.colors));
     mainNode.appendChild(getOverviewNode());
     mainNode.appendChild(getStackNode(settings.about.stack));

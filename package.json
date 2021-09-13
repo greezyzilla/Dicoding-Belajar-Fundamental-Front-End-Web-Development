@@ -1,0 +1,41 @@
+{
+    "name": "mymovielist",
+    "version": "1.0.0",
+    "description": "saving movies into local wathed list",
+    "main": "index.js",
+    "scripts": {
+        "clean": "rm -rf public",
+        "start": "webpack"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/greezyzilla/Dicoding-Belajar-Fundamental-Front-End-Web-Development.git"
+    },
+    "keywords": ["webpack"],
+    "author": "greezyzilla",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/greezyzilla/Dicoding-Belajar-Fundamental-Front-End-Web-Development/issues"
+    },
+    "homepage": "https://github.com/greezyzilla/Dicoding-Belajar-Fundamental-Front-End-Web-Development#readme",
+    "dependencies": {
+        "axios": "^0.21.1",
+        "regenerator-runtime": "^0.13.9",
+        "sweetalert": "^2.1.2"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.15.0",
+        "@babel/preset-env": "^7.15.0",
+        "autoprefixer": "^10.3.1",
+        "babel-loader": "^8.2.2",
+        "css-loader": "^6.2.0",
+        "html-webpack-plugin": "^5.3.2",
+        "postcss": "^8.3.6",
+        "postcss-loader": "^6.1.1",
+        "style-loader": "^3.2.1",
+        "tailwindcss": "^2.2.7",
+        "webpack": "^5.50.0",
+        "webpack-cli": "^4.7.2",
+        "webpack-dev-server": "^3.11.2"
+    }
+}

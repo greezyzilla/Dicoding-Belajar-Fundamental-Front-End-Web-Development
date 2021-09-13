@@ -1,7 +1,10 @@
-import "./components/site-header.js";
-import "./components/watched-list.js";
-import "./components/site-footer.js";
-import watchedList from "./data/movies.js";
+import "../components/site-header.js";
+import "../components/watched-list.js";
+import "../components/site-footer.js";
+import watchedList from "../data/movies.js";
+import swal from "sweetalert";
+import "../../css/tailwind.css";
+import "regenerator-runtime";
 
 const getFilterNode = () => {
     const filterNode = document.createElement("div");
@@ -47,7 +50,7 @@ window.addEventListener("load", async () => {
     document.getElementById("header").appendChild(headerNode);
 
     const mainNode = document.getElementById("main");
-    mainNode.innerHTML = `<h1 class="text-3xl text-center my-8">MY WATCHED LIST</h1>`;
+    mainNode.innerHTML = `<h1 class="text-3xl text-center my-8 shadow-text-orange font-semibold">MY WATCHED LIST</h1>`;
     mainNode.appendChild(getFilterNode());
     mainNode.appendChild(getMoviesNode());
 
