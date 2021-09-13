@@ -13,11 +13,11 @@ class MovieList {
     }
 
     include(movie) {
-        return this.list.filter((item) => item.id == movie.id).length > 0;
+        return this.list.filter((item) => item.id === movie.id).length > 0;
     }
 
     remove(movie) {
-        this._list = this._list.filter((item) => item.id != movie.id);
+        this._list = this._list.filter((item) => item.id !== movie.id);
         localStorage.setItem("watched-list", JSON.stringify(this._list));
     }
 }

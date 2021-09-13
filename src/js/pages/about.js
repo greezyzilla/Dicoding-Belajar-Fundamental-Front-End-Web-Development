@@ -30,7 +30,7 @@ const getDisplayNode = (colors) => {
     const displayNode = document.createElement("section");
     displayNode.setAttribute("id", "display");
     displayNode.style.height = "40vw";
-    displayNode.style.backgroundImage = `url('https://i.ibb.co/kcn1Vyk/about-banner.png')`;
+    displayNode.style.backgroundImage = "url(https://i.ibb.co/kcn1Vyk/about-banner.png)";
     displayNode.setAttribute("class", "mb-8 w-full bg-cover flex justify-end items-end bg-center");
 
     const styleNode = document.createElement("div");

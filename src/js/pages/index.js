@@ -54,7 +54,7 @@ window.addEventListener("load", async () => {
     document.getElementById("header").appendChild(headerNode);
 
     const mainNode = document.getElementById("main");
-    mainNode.setAttribute("class", mainNode.classList.toString() + " mb-28 md:mb-0");
+    mainNode.setAttribute("class", `${mainNode.classList.toString()} mb-28 md:mb-0`);
     mainNode.appendChild(await getMoviesCarouselNode());
     const moviesNode = await getMoviesSectionsNodes(settings.movie.display);
     moviesNode.forEach((movieNode) => mainNode.appendChild(movieNode));

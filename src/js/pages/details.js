@@ -57,7 +57,7 @@ window.addEventListener("load", async () => {
     document.getElementById("header").appendChild(headerNode);
 
     const mainNode = document.getElementById("main");
-    mainNode.setAttribute("class", mainNode.classList.toString() + " md:w-5/6 lg:4/5 2xl:w-3/5 mb-28 md:mb-0");
+    mainNode.setAttribute("class", `${mainNode.classList.toString()} md:w-5/6 lg:4/5 2xl:w-3/5 mb-28 md:mb-0`);
 
     try {
         const informationsNode = await getInformationNode(id);

@@ -18,7 +18,7 @@ class ButtonToggleList extends HTMLElement {
                 swal("Added", "Added movie to watched list", "success");
                 this.movie = { ...this._movie, onList: true };
             }
-            const moviesCard = document.querySelectorAll("#card" + this._movie.id);
+            const moviesCard = document.querySelectorAll(`#card${this._movie.id}`);
             if (moviesCard.length) moviesCard.forEach((item) => (item.movie = this._movie));
             this.render();
         });

@@ -39,7 +39,7 @@ window.addEventListener("load", async () => {
     headerNode.appendChild(siteHeaderNode);
 
     const mainNode = document.getElementById("main");
-    mainNode.setAttribute("class", mainNode.classList.toString() + " flex flex-col items-center mb-36 md:mb-0");
+    mainNode.setAttribute("class", `${mainNode.classList.toString()} flex flex-col items-center mb-36 md:mb-0`);
     mainNode.innerHTML = `<h1 class="text-2xl text-white">Search Result</h1><p class="text-xs text-gray-300 mt-2 mb-6">Total Result : <span id="search-count">0</span></p>`;
 
     const { moviesNodes, totalResult, totalPages } = await getMoviesNode(category, query, page);

@@ -9,7 +9,7 @@ class SiteFooter extends HTMLElement {
     render() {
         this.innerHTML = `
             <div class='flex gap-4 justify-center mt-16 '>
-            ${settings.socials.map((social) => `<a href=${social.link}><img src='${social.image}'  class="w-7 h-7 rounded-sm transform hover:scale-125 transition ease-in-out"></a>`).join("")}
+            ${settings.socials.map((social) => `<a href=${social.link}><img src=${social.image} alt="${social.label} Icon" class="w-7 h-7 rounded-sm transform hover:scale-125 transition ease-in-out"></a>`).join("")}
             </div>
             <nav class="mt-4 flex gap-2 justify-center text-white text-xs">
                 <a href="./index.html">Home</a>
