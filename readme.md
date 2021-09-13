@@ -4,9 +4,17 @@ This project is made to fulfill the last submission of **Dicoding’s Front-End 
 
 ## Usage
 
-The main files stored in the `src` folder, there will be a `css` folder to save the configuration file for Tailwindcss, `template` folder contains a site template on `.html` format, and `js` folder used to store the site pages, components, and data. To compile the files, you can type the command : > npm run start
+The main files stored in the `src` folder, there will be a `css` folder to save the configuration file for Tailwindcss, `template` folder contains a site template on `.html` format, and `js` folder used to store the site pages, components, and data. To compile the files into development mode, you can type the command :
 
-There will be a `public` folder that contains HTML pages and a `js` folder that contain javascript files for each page. To remove the `public` folder's you can type the command : > npm run clean
+    > npm run dev
+
+There will be a `public` folder that contains HTML pages and a `js` folder that contains javascript files for each page. The output size of that command should be 22,4MB. If you want to optimize the output files for production, you can type the command :
+
+    > npm run prod
+
+To remove the `public` folder's you can type the command :
+
+    > npm run clean
 
 ## API List
 

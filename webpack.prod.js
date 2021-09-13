@@ -1,20 +1,9 @@
-const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+const { merge } = require("webpack-merge");
+const common = require("./webpack.common.js");
 const TailwindCssPlugin = require("tailwindcss");
 
-const htmlEntry = ["index", "details", "list", "browse", "about"];
-
-module.exports = {
-    entry: htmlEntry.reduce((acc, item) => {
-        const entries = { ...acc };
-        entries[item] = `./src/js/pages/${item}.js`;
-        return entries;
-    }, {}),
-    mode: "development",
-    output: {
-        filename: "[name].bundle.js",
-        path: __dirname + "/public/js",
-    },
+module.exports = merge(common, {
+    mode: "production",
     module: {
         rules: [
             {
@@ -63,14 +52,4 @@ module.exports = {
             },
         ],
     },
-    plugins: [
-        ...htmlEntry.map((item) => {
-            return new HtmlWebpackPlugin({
-                template: "./src/template/template.html",
-                filename: `../${item}.html`,
-                title: item == "index" ? "Home | MyMovieList" : `${item.charAt(0).toUpperCase()}${item.slice(1)} | MyMovieList`,
-                chunks: [item],
-            });
-        }),
-    ],
-};
+});
